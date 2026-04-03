@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Email Matthew Brace – M.Brace@Github.com" />
+  <title>M.Brace – Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <div class="email-card">
+      <header>
+        <img
+          class="avatar"
+          src="https://github.com/Kushmanmb.png"
+          alt="Matthew Brace avatar"
+          width="72"
+          height="72"
+          onerror="this.src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'"
+        />
+        <h1>Matthew Brace</h1>
+        <p class="handle">@Kushmanmb &middot; GitHub</p>
+      </header>
+
+      <!-- Configured email address -->
+      <div class="email-address-block">
+        <span class="icon" aria-hidden="true">📧</span>
+        <a id="mailto-link" href="mailto:M.Brace@Github.com">M.Brace@Github.com</a>
+      </div>
+
+      <div class="divider">or send a message below</div>
+
+      <!-- Contact form -->
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Jane Smith"
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your email <span aria-hidden="true">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="What's this about?"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message…"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-send">
+          ✉️ Send Email
+        </button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      View source on
+      <a href="https://github.com/Kushmanmb/M.Brace-GitHub.com" target="_blank" rel="noopener">
+        GitHub
+      </a>
+    </p>
+  </footer>
+
+  <!-- Email configuration must be loaded before email.js -->
+  <script src="config.js"></script>
+  <script src="email.js"></script>
+</body>
+</html>
