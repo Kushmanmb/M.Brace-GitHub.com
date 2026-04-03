@@ -1,6 +1,6 @@
 # M.Brace-GitHub.com
 
-📧 **Contact:** [M.Brace@Github.com](mailto:M.Brace@Github.com)
+📧 **Contact:** [M.Brace@GitHub.com](mailto:M.Brace@GitHub.com)
 
 ---
 
